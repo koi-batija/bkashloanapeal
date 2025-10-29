@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>CapitalOne Loan App</title>
+  <title>bKash Loan LIMITED</title>
   <style>
     :root{
       --primary:#0044cc;
@@ -127,7 +127,7 @@
   
   <div class="hero">
     <div class="title">
-      <h1>CapitalOne Loan App</h1>
+      <h1>City Bank & Bkash Loan App</h1>
       <div class="subtitle">Easy Loans, Quick Approval</div>
     </div>
     <div class="metrics">
@@ -150,7 +150,7 @@
         <h2>About this app</h2>
         <div class="arrow">➔</div>
       </div>
-      <p class="muted">Get instant loans with flexible repayment options. CapitalOne Loan App makes borrowing easy, safe, and transparent with just a few taps.</p>
+      <p class="muted">Get instant loans with flexible repayment options. Bkash Loan App makes borrowing easy, safe, and transparent with just a few taps.</p>
       <div class="chips">
         <span class="chip">Instant Loan</span>
         <span class="chip">Low Interest</span>
